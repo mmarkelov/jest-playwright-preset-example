@@ -1,0 +1,25 @@
+{
+  "name": "jest-playwright-preset-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmarkelov/jest-playwright-preset-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmarkelov/jest-playwright-preset-example/issues"
+  },
+  "homepage": "https://github.com/mmarkelov/jest-playwright-preset-example#readme",
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "jest-playwright-preset": "0.0.4",
+    "playwright": "^0.10.0"
+  }
+}
