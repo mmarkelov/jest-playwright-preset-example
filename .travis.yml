@@ -10,5 +10,16 @@ cache:
     #
     # https://docs.npmjs.com/cli/ci#example
     - '$HOME/.npm'
-script:
-  - npm run test
+jobs:
+  include:
+    - stage: Tests & Code Check
+      name: '[Chromium] Functional Tests'
+      script: JEST_BROWSER=chromium npm run test
+
+    - stage: Tests & Code Check
+      name: '[Firefox] Functional Tests'
+      script: JEST_BROWSER=firefox npm run test
+
+    - stage: Tests & Code Check
+      name: '[WebKit] Functional Tests'
+      script: JEST_BROWSER=webkit npm run test
