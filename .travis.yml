@@ -14,12 +14,12 @@ jobs:
   include:
     - stage: Tests & Code Check
       name: '[Chromium] Functional Tests'
-      script: JEST_BROWSER=chromium npm run test
+      script: BROWSER=chromium npm run test
 
     - stage: Tests & Code Check
       name: '[Firefox] Functional Tests'
-      script: JEST_BROWSER=firefox npm run test
+      script: BROWSER=firefox npm run test
 
     - stage: Tests & Code Check
       name: '[WebKit] Functional Tests'
-      script: JEST_BROWSER=webkit npm run test
+      script: BROWSER=webkit npm run test
