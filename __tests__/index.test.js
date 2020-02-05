@@ -1,10 +1,10 @@
 describe('Google', () => {
     beforeAll(async () => {
-        await page.goto('https://whatismybrowser.com/')
+        await page.goto('https://www.google.com/')
     })
 
     it('should display "google" text on page', async () => {
-        const browser = await page.$eval('.string-major a', el => el.text);
-        expect(browser).toContain('Chrome')
+        const title = await page.title();
+        expect(title).toBe('Google')
     })
 })

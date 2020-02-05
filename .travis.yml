@@ -13,13 +13,13 @@ cache:
 jobs:
   include:
     - stage: Tests & Code Check
-      name: '[Chromium] Functional Tests'
+      name: '[Chromium] Tests'
       script: BROWSER=chromium npm run test
 
     - stage: Tests & Code Check
-      name: '[Firefox] Functional Tests'
+      name: '[Firefox] Tests'
       script: BROWSER=firefox npm run test
 
     - stage: Tests & Code Check
-      name: '[WebKit] Functional Tests'
+      name: '[WebKit] Tests'
       script: BROWSER=webkit npm run test
