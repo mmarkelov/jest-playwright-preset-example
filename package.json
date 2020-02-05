@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test:chromium": "jest",
+    "test:firefox": "BROWSER=firefox jest",
+    "test:webkit": "BROWSER=webkit jest",
+    "test": "npm run test:chromium && npm run test:firefox && npm run test:webkit"
   },
   "repository": {
     "type": "git",
@@ -19,7 +22,7 @@
   "homepage": "https://github.com/mmarkelov/jest-playwright-preset-example#readme",
   "devDependencies": {
     "jest": "^25.1.0",
-    "jest-playwright-preset": "0.0.4",
-    "playwright": "^0.10.0"
+    "jest-playwright-preset": "0.0.5",
+    "playwright": "^0.9.24"
   }
 }
