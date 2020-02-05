@@ -10,8 +10,20 @@ cache:
     #
     # https://docs.npmjs.com/cli/ci#example
     - '$HOME/.npm'
-jobs:
-  include:
-    - stage: Tests & Code Check
-      name: '[Firefox] Tests'
-      script: BROWSER=firefox npm run test
+script:
+  - npm run test
+  - BROWSER=firefox npm run test
+  - BROWSER=webkit npm run test
+#jobs:
+#  include:
+#    - stage: Tests & Code Check
+#      name: '[Firefox] Tests'
+#      script: BROWSER=firefox npm run test
+#
+#    - stage: Tests & Code Check
+#      name: '[Chromium] Tests'
+#      script: npm run test
+#
+#    - stage: Tests & Code Check
+#      name: '[WebKit] Tests'
+#      script: BROWSER=webkit npm run test
