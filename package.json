@@ -22,7 +22,7 @@
   "homepage": "https://github.com/mmarkelov/jest-playwright-preset-example#readme",
   "devDependencies": {
     "jest": "^25.1.0",
-    "jest-playwright-preset": "0.0.5",
-    "playwright": "^0.9.24"
+    "jest-playwright-preset": "0.0.6",
+    "playwright": "^0.10.0"
   }
 }
